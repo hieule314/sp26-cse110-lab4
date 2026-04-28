@@ -116,6 +116,19 @@ Explaination: true becomes 1, so 1 == 2 is false
 F. true == Boolean(2) --> true
 Explaination: Boolean(2) is true, and both sides are boolean
 
-Differences between == and ===:
+15. Differences between == and ===
 == allows type coercion before comparison
 === requires both operations to be same type and value
+
+17. The function returns:
+[2, 4, 6]
+
+Explaination: modifyArray loops through the array [1, 2, 3] and calls function doSomething to each element. doSomething multiplies each number by 2, so the result is [2, 4, 6].
+
+19. The output is:
+1
+4
+3
+2
+
+Explaination: 1 and 4 are printed immediately. The setTimeout with 0ms is placed in the event queue and runs after the current code finishes and 3 prints next. The setTimeout with 1000ms runs last after 1 second printing 2.

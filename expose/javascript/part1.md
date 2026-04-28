@@ -25,4 +25,6 @@ TypeError: Assignment to constant variable.
 
 Explaination: This happens because result is declared with const, so it cannot be reassigned after being initialized to 0.
 
-7. Explaination: Line 13 also does not print because the program already errors at line 7 when trying to reassign the const variable result.
+7. Line 13 also does not print 
+
+Explaination: because the program already errors at line 7 when trying to reassign the const variable result.
