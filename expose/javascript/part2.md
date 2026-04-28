@@ -53,3 +53,69 @@ Explaination: length is declared with const inside the function but outside the 
 
 Explaination: discounted is declared with const, but the array itself can still be modified. This code does not reassign discounted; it only pushes values into the array.
 
+12.
+
+a. student.name
+b. student['Grad Year']
+c. student.greeting()
+d. student['Favorite Teacher'].name
+e. student.courseLoad[0]
+
+13. Arithmetic
+
+A. '3' + '2' --> '32'
+
+Explaination: number is converted to string and concatenated
+
+B. '3' - 2 --> 1
+
+Explaination: string is converted to number
+
+C. 3 + null --> 3
+
+Explaination: null becomes 0
+
+D. '3' + null --> '3null'
+
+Explaination: null becomes string
+
+E. true + 3 --> 4
+
+Explaination: true becomes 1
+
+F. false + null --> 0
+
+Explaination: false --> 0, null --> 0
+
+G. '3' + undefined --> '3undefined'
+
+Explaination: undefined becomes string
+
+H. '3' - undefined --> NaN
+
+Explaination: undefined becomes NaN
+
+14. Comparison
+
+A. '2' > 1 --> true
+
+Explaination: '2' is converted to number 2, and 2 > 1 is true.
+
+B. '2' < '12' --> false
+Explaination: both are strings so the comparison is lexicographical. '2' comes after '1' so it is false.
+
+C. 2 == '2' --> true
+Explaination: '2' is converted to number 2 
+
+D. 2 === '2' --> false
+Explaination: === checks both value and type and these are different
+
+E. true == 2 --> false
+Explaination: true becomes 1, so 1 == 2 is false
+
+F. true == Boolean(2) --> true
+Explaination: Boolean(2) is true, and both sides are boolean
+
+Differences between == and ===:
+== allows type coercion before comparison
+=== requires both operations to be same type and value
